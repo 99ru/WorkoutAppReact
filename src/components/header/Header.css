@@ -1,13 +1,23 @@
-nav {
-  background-color: #000000;
-  height: 80px;
+.header-container {
+  background-color: #131212;
+  height: 100px;
   display: flex;
   position: fixed;
   top: 10;
   width: 100%;
+  z-index: 1;
 }
-img {
+
+.header-logo > img {
+  width: 70px;
   padding: 1rem;
-  margin-left: 2rem;
-  height: 60%;
+  margin-left: 12px;
+}
+
+.profile-logo {
+position: absolute;
+right: 1vh;
+top: 2.5vh;
+cursor: pointer;
+width: 100px;
 }

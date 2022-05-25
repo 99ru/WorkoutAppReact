@@ -29,7 +29,7 @@ h1{
 button{
   background-color: #ffffff;
   color: #000000;
-  border: none;
+  border: 10px solid #ffffff;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1.2rem;

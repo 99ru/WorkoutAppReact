@@ -1,0 +1,30 @@
+.card-item-container img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.card-item-container {
+  width: 350px;
+  padding: 0.3rem;
+  flex-flow: column;
+  margin: 2rem;
+}
+
+.card-content {
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+
+.card-button {
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.887);
+  color: whitesmoke;
+  padding: 0.3rem;
+  margin: 10px;
+  border: solid 1px rgb(255, 255, 255);
+  text-transform: uppercase;
+  border-radius: 1px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer; 
+}

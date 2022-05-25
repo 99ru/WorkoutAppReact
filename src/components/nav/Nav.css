@@ -1,0 +1,10 @@
+.nav-container {
+  background-color: rgba(0, 0, 0, 0.671);
+  color: #fff;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
