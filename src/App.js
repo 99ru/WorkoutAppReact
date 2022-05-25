@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, {  useEffect } from "react";
 import './App.css';
+import Header from './components/header/Header';
+import VideoLoop from './components/video/VideoLoop';
+
+
+const URL = "https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  useEffect(( ) => {
+  const fetchData = async () =>{
+    try {
+      const response = await fetch(URL);
+      const data = await response.json();
+      console.log(data);
+    }
+    catch(error){
+      console.log(error)
+    }
+  }
+  fetchData(); 
+
+  }, []); 
+
+    return (
+      <div>
+       <Header />
+        <VideoLoop />
+      </div>
+    )
+
 }
 
 export default App;
