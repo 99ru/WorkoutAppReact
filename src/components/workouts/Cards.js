@@ -3,7 +3,7 @@ import "./card.css";
 
 const Cards = ({ workouts, genderToggle }) => {
   return (
-    <div>
+    <>
       {workouts.map((exercise) => (
         <SingleCard
           key={exercise.id}
@@ -14,7 +14,7 @@ const Cards = ({ workouts, genderToggle }) => {
           id={exercise.id}
         />
       ))}
-    </div>
+    </>
   );
 };
 
