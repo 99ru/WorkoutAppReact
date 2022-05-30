@@ -5,9 +5,10 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
-  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
+  text-align: center;
+  
 }
 
 .main-content {
@@ -16,7 +17,6 @@
   flex-wrap: wrap;
   flex-direction: center;
   justify-content: center;
- /*  align-items: stretch; */
 }
 
 

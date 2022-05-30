@@ -1,7 +1,7 @@
 import SingleCard from "./SingleCard";
 import "./card.css";
 
-const Cards = ({ workouts, genderToggle }) => {
+const Cards = ({ workouts, genderToggle, showWorkout }) => {
   return (
     <>
       {workouts.map((exercise) => (
@@ -12,6 +12,7 @@ const Cards = ({ workouts, genderToggle }) => {
           femaleImage={exercise.female.image}
           maleImage={exercise.male.image}
           id={exercise.id}
+          showWorkout={showWorkout}
         />
       ))}
     </>

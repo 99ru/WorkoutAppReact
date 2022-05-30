@@ -4,12 +4,10 @@
   justify-content: center;
 }
 .toggle-container button {
-  width: 150px;
-  height: 60px;
   background: transparent;
   color: white;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   border: solid 1px white;
+  border-radius: 0px;
 }
 
 .toggle-container button:hover {
