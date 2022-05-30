@@ -14,8 +14,11 @@
 }
 
 .card-content {
-  background-color: #ffffff;
+  
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
+  border: #e6e0e0 solid 1px;
+  box-shadow: #00000029 0px 0px 10px;
 }
 
 .card-button {

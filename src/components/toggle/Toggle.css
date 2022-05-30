@@ -2,6 +2,7 @@
   display: flex;
   color: white;
   justify-content: center;
+  align-items: center;
 }
 .toggle-container button {
   background: transparent;
@@ -18,3 +19,4 @@
   background-color: #ffffff;
   color: #000;
 }
+
