@@ -1,6 +1,7 @@
 import "./modal.css";
 
 const CardModal = ({ modal, toggleModal, workout, genderToggle }) => {
+
   return (
     <>
       {modal ? (
@@ -13,7 +14,7 @@ const CardModal = ({ modal, toggleModal, workout, genderToggle }) => {
             ) : (
               <img src={workout.female.image} alt={workout.name} />
             )}
-            
+           <strong> <p>{workout.bodyAreas[0]}  {workout.bodyAreas[1]}</p>  </strong>
             <div
               className="modal-description"
               dangerouslySetInnerHTML={{ __html: workout["transcript"] }}
@@ -23,6 +24,7 @@ const CardModal = ({ modal, toggleModal, workout, genderToggle }) => {
       ) : null}
     </>
   );
+
 };
 
 export default CardModal;

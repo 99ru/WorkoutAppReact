@@ -14,16 +14,15 @@
 }
 
 .modal-content {
-  width: 75vw;
-  height: 65vh;
   position: relative;
   background: whitesmoke;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
-  line-height: 2;
+  padding: 2.5rem;
+  width: 60rem;
+  line-height: 1.7;
 }
 
 .modal-content img {
@@ -46,7 +45,13 @@
   right: 30px;
 }
 
-.modal-description{
-  font-size: 16px;
+.modal-content button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+.modal-description{
+  font-size: 15px;
+}
+
+
 

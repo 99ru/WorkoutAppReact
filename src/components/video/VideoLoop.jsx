@@ -11,7 +11,6 @@ const VideoLoop = () => {
       <section>
         <h1>We're all gonna make it brah</h1>
         <p> -Aziz Zyzz Shavershian </p>
-        <button>Workouts</button>
       </section>
     </div>
   );

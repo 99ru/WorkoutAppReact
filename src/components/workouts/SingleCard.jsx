@@ -1,6 +1,6 @@
 import "./card.css";
 
-const SingleCard = ({ name, genderToggle, femaleImage, maleImage, showWorkout, id}) => {
+const SingleCard = ({ name, genderToggle, femaleImage, maleImage, showWorkout, id,}) => {
   return (
     <div className="single-card-container">
       <img  src={genderToggle === "womens" ? femaleImage : maleImage}  alt={name}/>

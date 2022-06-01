@@ -11,28 +11,30 @@ const URL =
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
+  const [filter, setFilter] = useState("");
   const [genderToggle, setGenderToggle] = useState("mens");
   const [modal, setModal] = useState(false);
   const [selectedWorkout, setSelectedWorkout] = useState(null);
 
+  const selectFilter = (e) => setFilter(e.target.id);
   const selectGender = (e) => setGenderToggle(e.target.id);
-  const toggleModal = () => setModal(!modal); 
+  const toggleModal = () => setModal(!modal);
   const showWorkout = (id) => {
     setSelectedWorkout(id);
     setModal(true);
   };
+  const filteredWorkouts = workouts.filter((workout) => {
+    return workout.bodyAreas.includes(filter);
+  });
+  console.log(filteredWorkouts);
 
   useEffect(() => {
     const fetchURL = async () => {
       const response = await fetch(URL);
-        const data = await response.json();
-        console.log(data);
-        if (data && Array.isArray(data.exercises)) {
-          setWorkouts(data.exercises || []);
-        } else {
-          console.log("No data");
-        }
-    }
+      const data = await response.json();
+      setWorkouts(data.exercises || []);
+      console.log(data.exercises);
+    };
     fetchURL();
   }, []);
 
@@ -40,15 +42,19 @@ function App() {
     <div>
       <Header />
       <VideoLoop />
-      <Nav genderToggle={genderToggle} selectGender={selectGender} />
+      <Nav
+        genderToggle={genderToggle}
+        selectGender={selectGender}
+        selectFilter={selectFilter}
+      />
       <div className="main-content">
         <Cards
-          workouts={workouts}
+          workouts={filteredWorkouts}
           showWorkout={showWorkout}
           genderToggle={genderToggle}
         />
       </div>
-      <CardData
+      <CardData // modal
         workouts={workouts}
         modal={modal}
         toggleModal={toggleModal}

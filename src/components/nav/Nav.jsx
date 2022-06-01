@@ -1,22 +1,18 @@
 import Toggle from "../toggle/Toggle";
+import FilteredWorkout from "../toggle/FilteredWorkout"
 import "./Nav.css";
 
-const Nav = ({ selectGender, genderToggle }) => {
+
+const Nav = ({ selectGender, genderToggle, selectFilter }) => {
   return (
     <div className="nav-container">
       <Toggle selectGender={selectGender} genderToggle={genderToggle} />
-      
       <section className="nav-categories">
         <article className="categories">
-        <p>bodyparts</p>
-        <button>Shoulders</button>
-        <button>Back</button>
-        <button>Chest</button>
-        <button>Legs</button>
-        <button>Glutes</button>
-        <button>Beceps</button>
-        <button>Triceps</button>
-        <button>Core</button>
+        <p>Choose exercises by muscle group</p>
+        <FilteredWorkout 
+        selectFilter={selectFilter}
+        />
         </article>
       </section>
     </div>
