@@ -5,6 +5,7 @@ import VideoLoop from "./components/video/VideoLoop";
 import Nav from "./components/nav/Nav";
 import Cards from "./components/workouts/Cards";
 import ModalData from "./components/modal/ModalData";
+import Footer from "./components/footer/Footer";
 
 const URL =
   "https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/";
@@ -61,6 +62,8 @@ function App() {
         genderToggle={genderToggle}
         selectedWorkout={selectedWorkout}
       />
+
+      <Footer />
     </div>
   );
 }
