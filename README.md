@@ -2,5 +2,5 @@
 
 # TODOS
 - modal for details button ✅
-- categorise workouts by muscle groups
+- categorise workouts by muscle groups ✅
 - add workouts to your list
