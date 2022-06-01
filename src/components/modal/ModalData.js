@@ -1,6 +1,6 @@
 import CardModal from "./CardModal";
 
-const CardData = ({
+const ModalData = ({
   workouts,
   genderToggle,
   selectedWorkout,
@@ -24,4 +24,4 @@ return (
 )
 };
 
-export default CardData
+export default ModalData

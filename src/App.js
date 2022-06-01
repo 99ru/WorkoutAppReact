@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import VideoLoop from "./components/video/VideoLoop";
 import Nav from "./components/nav/Nav";
 import Cards from "./components/workouts/Cards";
-import CardData from "./components/modal/CardData";
+import ModalData from "./components/modal/ModalData";
 
 const URL =
   "https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/";
@@ -54,7 +54,7 @@ function App() {
           genderToggle={genderToggle}
         />
       </div>
-      <CardData // modal
+      <ModalData 
         workouts={workouts}
         modal={modal}
         toggleModal={toggleModal}

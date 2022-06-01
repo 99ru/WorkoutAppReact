@@ -2,8 +2,6 @@ import Logo from '../../assets/logo.svg';
 import Profile from '../../assets/identity.svg';
 import './Header.css';
 
-
-
 const Header = () => {
   return (
     <div className='header-container'>
