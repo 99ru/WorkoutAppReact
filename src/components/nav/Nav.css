@@ -1,5 +1,5 @@
 .nav-container {
-  background-color: #131212;
+  background-color: #030303da;
   color: #fff;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   padding: 2rem;
@@ -11,6 +11,10 @@
 }
 .categories{
   margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .categories button {
   width: 130px;
