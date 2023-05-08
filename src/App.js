@@ -8,7 +8,7 @@ import ModalData from "./components/modal/ModalData";
 import Footer from "./components/footer/Footer";
 
 const URL =
-  "https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/";
+ "https://run.mocky.io/v3/7ba35312-6bc4-4153-a8c7-b888529d70fa/";
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
